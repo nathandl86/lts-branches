@@ -5,4 +5,4 @@ if __name__ == 'main':
     parser = ArgumentParser()
     parser.add_argument('--name')
     args = parser.parse_args()
-    print(f'HERE {args.name} 👋')
+    print(f'Hello {args.name} 👋')
