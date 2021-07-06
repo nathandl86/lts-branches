@@ -1,3 +1,8 @@
+"""Module to say Hello"""
+from argparse import ArgumentParser
 
 if __name__ == 'main':
-    print('HERE 👋')
+    parser = ArgumentParser()
+    parser.add_argument('--name')
+    args = parser.parse_args()
+    print(f'HERE {args.name} 👋')
